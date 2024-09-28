@@ -4,7 +4,7 @@ const express = require('express');
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require("@google/generative-ai");
 
 const app = express();
-const port = 3000;
+const port = ;  //enter your port number
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
@@ -16,7 +16,7 @@ app.get('/',(req,res)=>{
 app.post('/generate', async (req, res) => {
     const inputText = req.body.inputText;
 
-    const apiKey = 'AIzaSyD9Ot9RNw57Lno2QZ-USEzYnS0fu3aFt80';
+    const apiKey = '';  //enter your gemini api key
     const genAI = new GoogleGenerativeAI(apiKey);
 
     const model = genAI.getGenerativeModel({
