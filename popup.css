@@ -1,0 +1,187 @@
+Basic reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#responseContainer {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  background-color: #ece9e1;
+  width: 100%;
+  min-height: 260px;
+  min-width: 230px;
+  max-height: 550px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 11px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 13px;
+  font-weight: 350;
+  justify-content:center;
+  line-height: 18px;
+
+
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  width: 550px;
+  font-weight: 300;
+}
+
+/* Container div styling */
+div {
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Custom Input styling */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+/* Paragraph styling */
+p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Custom Button styling */
+button {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5a4bcb, #8c85f3);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Display paragraph styling */
+
+#display {
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden; /* Hide overflowed content */
+  text-overflow: ellipsis; /* Add ellipsis (...) */
+  cursor: pointer; /* Pointer cursor to show it's clickable */
+
+
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+
+  white-space: normal; /* Ensure text wraps */
+}
+
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.05s ease;
+}
+
+
+/*new CSS from this line*/
+ 
+/* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+  height: 10px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Track color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe); /* Gradient scrollbar thumb */
+  border-radius: 10px; /* Rounded edges for the thumb */
+  border: 2px solid #f4f4f4; /* Space between the thumb and the track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a4bcb, #8c85f3); /* Darker gradient on hover */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(135deg, #4a3abf, #7c77e9); /* Active state gradient */
+}
+
+/* Ensure custom scrollbars are only applied to overflow elements */
+#responseContainer {
+  scrollbar-width: thin; /* For Firefox: makes scrollbar thinner */
+  scrollbar-color: #6c5ce7 #f4f4f4; /* Thumb and track colors */
+}
+
+/* Sticky input container */
+#inputContainer {
+  position: sticky; /* Sticks to the top of the scrollable area */
+  top: 0; /* Distance from the top of the container */
+  z-index: 1000; /* Ensure it stays above other content */
+  background: #fff; /* Match the background to prevent visual clutter */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for emphasis */
+  width:550px;
+}
+#prompt{
+  width: 500px;
+}
+#content{
+  padding: 10px;
+  margin: 0px;
+
+}
